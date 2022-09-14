@@ -10,27 +10,21 @@ export class AppComponent {
   constructor(private dialogservice:DialogService){}
 
   openDialogOne(){
-    debugger;
+    // debugger;
     this.dialogservice.dialogOne({
       title: "title1",
-    firstname:"first1",
-    lastname:"last1",
-    email:"email1",
-    phone:"phone1",
-    cancletext:"cancle1",
+    message:"conform1",
+   cancletext:"cancle1",
     conformtext:"conform1"
     })
 
   }
 
   openDialogtwo(){
-debugger;
+// debugger;
     this.dialogservice.dialogOne({
       title: "title2",
-      firstname:"first2",
-      lastname:"last2",
-      email:"email2",
-      phone:"phone2",
+      message:"conform2",
       cancletext:"cancle2",
       conformtext:"conform2"
     })

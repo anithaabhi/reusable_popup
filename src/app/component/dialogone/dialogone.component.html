@@ -6,14 +6,11 @@
 </div>
 
 <div mat-dialog-content>
-    firstname{{data.firstname}}
-    lastname{{data.lastname}}
-    email{{data.email}}
-    phone{{data.phone}}
-
+    firstname{{data.message}}
+    
 </div>
 
 <div mat-dialog-actions [align]="'end'">
-    <button mar-raised-button [mat-dialog-close]="false">{{data.cancletext}}</button>
-    <button mar-raised-button color="primary" [mat-dialog-close]="true">{{data.conformtext}}</button>
+    <button class="btn btn-danger" mat-raised-button [mat-dialog-close]="false">{{data.cancletext}}</button>
+    <button class="btn btn-success" mat-raised-button [mat-dialog-close]="true">{{data.conformtext}}</button>
 </div>
